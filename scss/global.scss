@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", san-serif;
+    font-weight: 500;
+    flex-flow: column wrap;
+}
+.subheader {
+    display: none;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #64dfdf;
+    width: 20vw;
+    height: 100%;
+    padding: 40px 20px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+.main {
+    background-color: white;
+    position: relative;
+    margin-left: 20vw;
+    height: auto;
+} 
+.logo {
+    font-size: 30px;
+}
+#menu-logo {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 15px;
+}
+#github {
+    font-size: 40px;
+    &:hover {
+        color: $header_color;
+    }
+}
+.link, .link:hover, .link:visited, .link:active {
+    color: inherit;
+}
+.highlgiht {
+    color: $header_color;
+}
+#vietnam {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+.uni {
+    width: 300px;
+    height: 300px;
+}
+#logo {
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+#battery {
+    color: $header_color;
+}
+.involved-header {
+    color: #999;
+}
+.projects-header {
+    color: $header_color;
+}
+.projects-link {
+    font-size: 20px;
+    &:hover {
+        color: $orange;
+    }
+}
