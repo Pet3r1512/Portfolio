@@ -14,6 +14,11 @@ body {
   flex-flow: column wrap;
 }
 
+.wrapper {
+  display: grid;
+  align-items: center;
+}
+
 .subheader {
   display: none;
 }
@@ -99,6 +104,23 @@ body {
 }
 .projects-link:hover {
   color: #fca311;
+}
+
+#E,
+#V {
+  width: 40px;
+  height: 40px;
+}
+
+.change {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.change__container {
+  display: flex;
+  gap: 0 20px;
 }
 
 .header {
@@ -224,6 +246,11 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
+  .subheader {
+    background-color: #64dfdf;
+    border-radius: 150px 0 0 150px;
+  }
+
   #vietnam {
     width: 18px;
     height: 18px;
@@ -242,7 +269,8 @@ body {
   }
   .submenu-link {
     text-decoration: none;
-    color: #64dfdf;
+    color: white;
+    font-size: 18px;
   }
 
   .header {
@@ -315,13 +343,17 @@ body {
   }
 
   .submenu {
-    display: none;
+    display: grid;
+  }
+  .submenu-item {
+    gap: 20px 0;
   }
 
   .subheader {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0 50px;
   }
 
   .subheader__avatar {
@@ -332,7 +364,7 @@ body {
 
   .main__about, .main__education, .main__skills, .main__projects {
     padding: 50px 20px;
-    max-width: 100vw;
+    width: 100vw;
   }
   .main__education--schoolname {
     font-size: 23px;
@@ -356,8 +388,10 @@ body {
     font-size: 20px;
   }
   .main__copyright {
-    bottom: 50px;
-    text-align: center;
+    position: relative;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .main__copyright > h2 {
     font-size: 12px;
